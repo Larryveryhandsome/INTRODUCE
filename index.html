@@ -1,1 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>滿築5 參觀流程</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 18px;
+            color: #666;
+        }
+        .step-btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            text-align: left;
+            transition: background-color 0.3s;
+        }
+        .step-btn:hover {
+            background-color: #1f618d;
+        }
+        .step-content {
+            display: none;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        .step-content h3 {
+            color: #e74c3c;
+            margin-top: 0;
+        }
+        .step-content ul {
+            padding-left: 20px;
+        }
+        .step-content li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>滿築5 參觀流程</h1>
+    <div class="intro">
+        跟隨您的步伐，從代銷中心到頂樓公設，完整體驗「滿築5」的魅力！點擊下方步驟，探索每階段優勢！
+    </div>
+    <div class="container">
+        <button class="step-btn" onclick="toggleStep('step1')">1. 進入代銷中心</button>
+        <div id="step1" class="step-content">
+            <h3>宜蘭優質地段，生活便利</h3>
+            <ul>
+                <li>位於義成路三段與東山永興路，交通便利，近羅東市區。</li>
+                <li>地理環境優渥，遠離噪音，生活機能完善。</li>
+                <li>自住與投資兼具，迎接您的理想家園。</li>
+            </ul>
+        </div>
 
+        <button class="step-btn" onclick="toggleStep('step2')">2. 公設（停車場、信箱、一樓設施等）</button>
+        <div id="step2" class="step-content">
+            <h3>實用公設，安心生活</h3>
+            <ul>
+                <li>停車場：27汽車+27機車位，戶戶配車位，產權獨立。</li>
+                <li>信箱與一樓設施：每戶專用信箱，搭配CCTV與對講機，安全便利。</li>
+                <li>消防與動線：光電與定溫式警報器，單進單出人車分離，居住無憂。</li>
+            </ul>
+        </div>
+
+        <button class="step-btn" onclick="toggleStep('step3')">3. 梯廳（電梯、樓梯）</button>
+        <div id="step3" class="step-content">
+            <h3>便利梯廳，安全第一</h3>
+            <ul>
+                <li>中川雙拼無機房電梯（8人乘，60m/min），戶數合理分配，平日無壓力。</li>
+                <li>樓梯設計實用，緊急時安全有保障。</li>
+            </ul>
+        </div>
+
+        <button class="step-btn" onclick="toggleStep('step4')">4. 電梯內</button>
+        <div id="step4" class="step-content">
+            <h3>旭生建設，品質保證</h3>
+            <ul>
+                <li>經驗老道的小建商，成本控制合理，質感全面提升。</li>
+                <li>3500psi鋼筋混凝土，專業技師精算，符合法規。</li>
+            </ul>
+        </div>
+
+        <button class="step-btn" onclick="toggleStep('step5')">5. 出電梯至2、3或4樓梯廳</button>
+        <div id="step5" class="step-content">
+            <h3>最適合您的樓層</h3>
+            <ul>
+                <li><strong>二樓</strong>：便利性佳，搬運方便，無需擠電梯。</li>
+                <li><strong>三樓</strong>：採光通風均衡，隱蔽性佳。</li>
+                <li><strong>四樓</strong>：視野開闊，採光通風最佳。</li>
+            </ul>
+        </div>
+
+        <button class="step-btn" onclick="toggleStep('step6')">6. 走廊（照明、樓梯、門外觀）</button>
+        <div id="step6" class="step-content">
+            <h3>細節到位，質感滿分</h3>
+            <ul>
+                <li>走廊照明充足，環境明亮舒適。</li>
+                <li>60A防火鋼板門，外觀高端，安全有保障。</li>
+            </ul>
+        </div>
+
+        <button class="step-btn" onclick="toggleStep('step7')">7. 室內空間（客廳至主臥室）</button>
+        <div id="step7" class="step-content">
+            <h3>實用舒適的兩房設計</h3>
+            <ul>
+                <li><strong>客廳</strong>：採光通風佳，格局方正，空間好規劃。</li>
+                <li><strong>廚房</strong>：三合一通風門，設備高端，實用耐用。</li>
+                <li><strong>陽台</strong>：聖瑪莉諾石英磚，耐候美觀。</li>
+                <li><strong>共用衛浴</strong>：TOTO節能馬桶，乾濕分離，衛生舒適。</li>
+                <li><strong>次臥室</strong>：空間實用，採光充足。</li>
+                <li><strong>主臥室</strong>：寬敞隱私，居住品質佳。</li>
+            </ul>
+        </div>
+
+        <button class="step-btn" onclick="toggleStep('step8')">8. 頂樓室內公設</button>
+        <div id="step8" class="step-content">
+            <h3>大空間公設，實用享受</h3>
+            <ul>
+                <li>頂樓休憩區，空間寬敞，適合住戶放鬆。</li>
+                <li>選材安心，功能實用，提升生活品質。</li>
+            </ul>
+        </div>
+
+        <button class="step-btn" onclick="toggleStep('step9')">9. 室外公設（太陽能板）</button>
+        <div id="step9" class="step-content">
+            <h3>太陽能收益，增值未來</h3>
+            <ul>
+                <li>屋頂太陽能光電系統，20年租賃收益歸管委會，降低管理費。</li>
+                <li>綠能設計，提升市場競爭力與投資價值。</li>
+            </ul>
+        </div>
+
+        <button class="step-btn" onclick="toggleStep('step10')">10. 回電梯至一樓</button>
+        <div id="step10" class="step-content">
+            <h3>品質與價值兼得</h3>
+            <ul>
+                <li>旭生建設用心打造，品質有保證。</li>
+                <li>1250萬起價（兩房+車位），市場競爭力強。</li>
+            </ul>
+        </div>
+
+        <button class="step-btn" onclick="toggleStep('step11')">11. 送客</button>
+        <div id="step11" class="step-content">
+            <h3>絕佳投資機會</h3>
+            <ul>
+                <li>羅東市區逼近1000萬的價格，滿築5以1250萬提供兩房+車位，超值選擇。</li>
+                <li>歡迎預約再訪，您的理想家園等您帶回家！</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function toggleStep(id) {
+            const step = document.getElementById(id);
+            if (step.style.display === "block") {
+                step.style.display = "none";
+            } else {
+                document.querySelectorAll('.step-content').forEach(item => {
+                    item.style.display = "none";
+                });
+                step.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
